@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signature App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Signature App</h1>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="signatureData">Data for Signature:</label>
+            <textarea id="signatureData" name="signatureData" required></textarea>
+
+            <button type="button" onclick="registerUser()">Register</button>
+        </form>
+
+        <div id="signatureInfo" style="display: none;">
+            <h2>Signature Information</h2>
+            <p><strong>Username:</strong> <span id="userInfo"></span></p>
+            <p><strong>Digital Signature:</strong> <span id="signatureResult"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
